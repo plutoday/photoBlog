@@ -14,8 +14,8 @@ article .readMoreButton{
 }
 .readMoreButton{
     position: relative;
-    left: 310px;
-    top: 20px;
+    left: 305px;
+    top: 0px;
 }
 
 #gotopBtn {
@@ -74,16 +74,25 @@ h2{
     margin: 0;
     padding: 0;
 }
+article{
+    background-color: white;
+    width: 100%;
+    min-height: 550px;
+    position: static;
+    display: inline-block;
+    margin: 20px 0 20px 0; 
+}
 article p{
     text-align: left;
-    margin: 5px;
 }
 p{
     font-family: 'HankenGroteskRegular'; 
     font-weight: normal; 
     font-style: normal;
     color:black;
-    font-size: 14px;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
 }
 #footnote{
     font-family: 'THSarabunNewRegular'; 
@@ -103,10 +112,9 @@ h1{
 
 #title{
     position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%,50%);
-    text-align: center;
+    top: 80px;
+    left: 10%;
+    height: 200px;
 }
 nav{
     position: relative;
@@ -124,15 +132,19 @@ h3{
     text-align: center;
 }
 h4{
-    font-family: 'BinzMedium'; 
-    font-weight: normal; 
+    font-family: 'GardinerRegular'; 
+    font-weight: bolder; 
     font-style: normal; 
+    font-size: 18px;
     color:black;
-    margin: 10px;
+    margin: 5px 0 5px 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
 }
-
+.text{
+    width: 690px;
+    margin: 5px auto;
+}
 #searchBar{
     position: absolute;
     top: 310px;
@@ -197,6 +209,7 @@ color: #138dd8;
 font-size: 16px;
 font-weight: bold;
 transition: all 0.5s linear;
+background-color: white;
 }
 .inputBtn{
     position: absolute;
@@ -229,43 +242,51 @@ transition: all 0.5s linear;
 .small{
     background-color: white;
     width: 100%;
-    min-height: 450px;
+    min-height: 470px;
     position: static;
     display: inline-block;
-    margin: 20px 0 0 0; 
 
 }
-section{
+.big{
     background-color: white;
     width: 100%;
     min-height: 550px;
     position: static;
     display: inline-block;
-    margin: 20px 0 0 0; 
+
 }
+.big img{
+    margin: auto;
+}
+
 body{
-    background-color: lightgrey;
+    background-color: rgba(227, 243, 2, 0.2);
     margin: 0;
     padding: 0;
-}
-
-#main{
-    background-color: lightgrey;
-    height: 3200px;
-    margin: 0;
-    padding: 0;
-    position: relative; top: -20px;
+    background-image: url("icons/camera-shutter.png");
+    background-size: 60px;
+    background-repeat: space;
+    
 }
 
 
-#aboutMe, #subscribe{
-    background-color: white;
+#aboutMe, #subscribe, #staytuned{
+    background-color: lightblue;
     width: 100%;
     height: 300px;
     display: inline-block;
-    margin: 20px 0 0 0; 
+    margin: 20px auto; 
     text-align: center;
+    border-radius: 10px;
 }
+#staytuned{
+    background-color:  rgb(241, 241, 125);
+
+}
+#aboutMe{
+    background-color: white;
+}
+
 #rightBar{
     width: 20%;
     position: static;
@@ -288,11 +309,14 @@ footer{
     display: block;
 }
 article{
-    margin: 0 30px 30px 30px;
+    margin: 10px auto;
     text-align: center;
+    border-radius: 10px;
+
 }
+
 ul{
-    text-align: left;
+    text-align: center;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -309,7 +333,8 @@ nav ul {
   
 nav ul li {
     float: left;
-    font-family: 'SimplePrintRegular'; 
+    font-family: 'GardinerRegular'; 
+    font-size: 20px;
     font-weight: normal; 
     font-style: normal; 
   }
@@ -340,6 +365,8 @@ nav ul li a:hover {
   }
   
   #footNav ul li {
+    font-family: 'HankenGroteskRegular'; 
+font-size: 12px;
     float: left;
   }
   
@@ -349,4 +376,16 @@ nav ul li a:hover {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+  }
+  hr {
+    border: 0px;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color: black;
+    height: 2px;
+  }
+  ol li{
+      text-align: left;
+      margin-left: 15px;
   }
